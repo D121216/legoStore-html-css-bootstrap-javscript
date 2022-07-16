@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Home | kvdlegoshop</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/prettyPhoto.css" rel="stylesheet">
+        <link href="../css/price-range.css" rel="stylesheet">
+        <link href="../css/animate.css" rel="stylesheet">
+        <link href="../css/main.css" rel="stylesheet">
+        <link href="../css/responsive.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->       
+        <link rel="shortcut icon" href="../images/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57-precomposed.png">
+        <script src="js/updown.js"></script>
+    </head><!--/head-->
+    
+	<body onload="loadHeader(); search(); ">
+		<header id="header"><!--header-->
+			
+			
+			<div class="header-middle"><!--header-middle-->
+				<div class="container" style="width: 100%;">
+					<div class="row">
+						<div class="">
+							<div class="logo pull-left">
+								<a href="../index.html"><img src="../images/home/new_logo.png" alt="" width="239" height="69"/></a>
+							</div>
+						</div>
+						<div class="col-sm-5" style="margin: 12px 53px;">
+							<div class="search_box pull-right">
+								<input class="header__search-input type="text" placeholder="Tìm kiếm sản phẩm" onkeyup="timkiem();" id="search"/>
+								<ul class="header__search-history-list"  id="goiy">
+									<h3 class="header__search-history-heading">Gợi ý</h3>
+									<li class="header__search-history-icon"><a href="../ninjago/ninjago.html">Ninja go</a></li>
+									<li class="header__search-history-icon"><a href="../startwar/startwar.html">Start War</a></li>
+									<li class="header__search-history-icon"><a href="../city/city.html">City</a></li>
+									<li class="header__search-history-icon"><a href="../friends/friends.html">Friends</a></li>
+									<li class="header__search-history-icon"><a href="../mavel/mavel.html">Marvel</a></li>
+									<li class="header__search-history-icon"><a href="../city/city_detail1.html">LEGO City 60141 - Trụ Sở Cảnh Sát</a></li>
+									<li class="header__search-history-icon"><a href="../city/city_detail2.html">LEGO City 60174 - Trụ Sở Cảnh Sát Núi Rừng</a></li>
+									<li class="header__search-history-icon"><a href="../friends/friend_detail1.html">Lego Friends - Buổi Ca Nhạc Hòa Tấu Của Andrea 41309</a></li>
+									<li class="header__search-history-icon"><a href="../friends/friends_details2.html">LEGO Friends 41127 - Khu Trò Chơi Giải Trí</a></li>
+									<li class="header__search-history-icon"><a href="../startwar/start_detail1.html">LEGO Star Wars 75219 - Phi Thuyền Chở Hàng AT-Hauler</a></li>
+									<li class="header__search-history-icon"><a href="../startwar/start_detail2.html">LEGO Star Wars 75220 - Cỗ Xe Sa Mạc Sandcrawler</a></li>
+									<li class="header__search-history-icon"><a href="../ninjago/ninjago_detail1.html">Lego Ninjago 70755 Biệt đội rừng Jungle Raider</a></li>
+									<li class="header__search-history-icon"><a href="../ninjago/ninjago_detail2.html">LEGO Ninjago 70594 - Cuộc Chiến Ngọn Hải Đăng</a></li>
+									<li class="header__search-history-icon"><a href="../mavel/mavel_deital.html">LEGO Marvel 76099 - Đại chiến Killmonger</a></li>
+									<li class="header__search-history-icon"><a href="../mavel/marvel_detail2.html">LEGO Marvel 76057 - Đại Chiến của Anh Em Người Nhện</a></li>
+								</ul>
+							</div>
+							<div class="header__search-wrap">
+							</div>
+						</div>
+						<div class="col-sm-3" style=" margin: 12px 39px;">
+							<div class="shop-menu pull-right" id="login" style="display: none;">
+								<ul class="nav navbar-nav">
+									<li><a href="../login.html"><i class="fa fa-lock"></i> Đăng nhập/Đăng ký</a></li>
+								</ul>
+							</div>
+							<div class="shop-menu pull-right" id="login1" style="display: block;">
+								<ul class="nav navbar-nav" style="width: 300px;">
+									<li><a href="../cart.html"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
+									<li><a href="../donhang.html"> Đơn hàng</a></li>
+									<li><a href="#" onclick="logout();"><img style="width: 22px;" src="../images/anhdaidien.png" alt=""></i> Đăng Xuất</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/header-middle-->
+		
+			<div class="header-bottom"><!--header-bottom-->
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6" style="margin-left: 350px;">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="mainmenu pull-left">
+								<ul class="nav navbar-nav collapse navbar-collapse">
+									<li><a href="../index.html" class="active">Trang chủ</a></li>
+									<li class="dropdown"><a href="#">Thương hiệu<i class="fa fa-angle-down"></i></a>
+										<ul role="menu" class="sub-menu">
+											<li><a href="../ninjago/ninjago.html">NINJA GO</a></li>
+											<li><a href="../city/city.html">CITY</a></li> 
+											<li><a href="../friends/friends.html">FRIENDS</a></li> 
+											<li><a href="../startwar/startwar.html">START WAR</a></li> 
+											<li><a href="../mavel/mavel.html">MARVEL</a></li> 
+										</ul>
+									</li> 
+									<li class="dropdown"><a href="#">Giới tính<i class="fa fa-angle-down"></i></a>
+										<ul role="menu" class="sub-menu">
+											<li><a href="../mavel/mavel.html">Nam</a></li>
+											<li><a href="../friends/friends.html">Nữ</a></li>
+										</ul>
+									</li> 
+									<li><a href="../contact-us.html">Liên hệ</a></li>
+									<li><a href="../gioithieu.html">Giới thiệu</a></li>
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div><!--/header-bottom-->
+		</header><!--/header-->
+	
+	<section>
+		<div class="container" style="width: 80%>
+			<div class="row" >
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+						<div class="category-items">
+							<h2>Danh mục</h2>
+						</div>
+						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+							<div class="panel panel-default">
+								<div class="panel-heading" >
+									<h4 class="panel-title">
+										<a href="../ninjago/ninjago.html">
+											<span class="badge pull-right"><i class="fa fa-angle-right"></i></span>
+											NINJA GO
+										</a>
+									</h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a  href="href="../ninjago/ninjago.html"">
+											<span class="badge pull-right"><i class="fa fa-angle-right"></i></span>
+											START WAR
+										</a>
+									</h4>
+								</div>
+							</div>
+							
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a  href="../city/city.html">
+											<span class="badge pull-right"><i class="fa fa-angle-right"></i></span>
+											CITY
+										</a>
+									</h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a  href="../friends/friends.html">
+											<span class="badge pull-right"><i class="fa fa-angle-right"></i></span>
+											FRIENDS
+										</a>
+									</h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="../mavel/mavel.html">
+											<span class="badge pull-right"><i class="fa fa-angle-right"></i></span>
+											MAVEL
+										</a>
+									</h4>
+								</div>
+							</div>
+						</div><!--/category-products-->
+						<div class="shipping text-center"><!--shipping-->
+							<img src="../images/home/shipping.jpg" alt="" />
+						</div><!--/shipping-->
+					
+					</div>
+				</div>
+				
+				<div class="col-sm-9 padding-right">
+					<div class="product-details"><!--product-details-->
+						<div class="col-sm-6">
+							<div class="view-product">
+								<div class="slide12"><img src="../images/home/h4.jpg" alt="" /></div>
+                                <div class="slide12"><img src="../images/home/start75219.jpg" alt=""></div>
+                                <div class="slide12"><img src="../images/home/start75219_1.jpg" alt=""></div>
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+							</div>
+							<div id="similar-product" class="carousel slide" data-ride="carousel">
+								  <!-- Wrapper for slides -->
+								    <div style="position: relative;">
+										<div class="img2">
+                                            <div class="img1">
+                                                <img class="change-img" onclick="currentSlide(1);" src="../images/home/h4.jpg" width="85" height="84" alt="">
+                                            </div>
+									        <div class="img1">
+                                                <img class="change-img" onclick="currentSlide(2);" src="../images/home/start75219.jpg" width="85" height="84" alt="">
+                                            </div>
+										    <div class="img1">
+                                                <img class="change-img" onclick="currentSlide(3);" src="../images/home/start75219_1.jpg" width="85" height="84" alt="">
+                                            </div>
+										    
+										</div>
+									</div>
+
+								  <!-- Controls -->
+							</div>
+
+						</div>
+						<div class="col-sm-6">
+							<div class="product-information"><!--/product-information-->
+								<script>
+									function ConfirmAdd()
+											{
+													  alert("Add to cart successfully.")
+											}
+							
+								</script>
+								<h2>Đồ chơi LEGO Star Wars 75219 - Phi Thuyền Chở Hàng AT-Hauler (LEGO 75219 Imperial AT-Hauler)</h2>    
+								<span>
+									<span>3.499.000đ</span>
+									
+								</span>
+                                <span>
+                                    <label>Số lượng:</label>
+									<input type="text" value="1" />
+									<button type="button" class="btn btn-fefault cart" onclick="addToCart();">
+										<i class="fa fa-shopping-cart"></i>
+										Thêm vào giỏ
+									</button>
+                                </span>
+								<p><b>Condition:</b> New</p>
+								<p><b>Brand:</b> kvdlegoshop</p>
+								<a href=""><img src="../images/product-details/share.png" class="share img-responsive"  alt="" /></a>
+							</div><!--/product-information-->
+						</div>
+					</div><!--/product-details-->
+					
+					
+					
+					<div class="recommended_items"><!--recommended_items-->
+						<h2 class="title text-center">Sản phẩm liên quan</h2>
+						
+						<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="item active">	
+									<div class="col-sm-4">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+													<img src="../images/home/legodragon.jpg" alt="" />
+													<h2>2.000.000đ</h2>
+													<p>LEGO DRAGON</p>
+													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-info"></i>Chi tiết</a>
+													<button type="button" class="btn btn-default add-to-cart" onclick="ConfirmAdd()"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+													<img src="../images/home/hulk.jpg" alt="" />
+													<h2>4.000.000đ</h2>
+													<p>HULK</p>
+													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-info"></i>Chi tiết</a>
+													<button type="button" class="btn btn-default add-to-cart" onclick="ConfirmAdd()"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+													<img src="../images/home/an2.jpg" alt="" />
+													<h2>1.500.000đ</h2>
+													<p>SUPER HEROES</p>
+													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-info"></i>Chi tiết</a>
+													<button type="button" class="btn btn-default add-to-cart" onclick="ConfirmAdd()"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							 		
+						</div>
+					</div><!--/recommended_items-->
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer id="footer"><!--Footer-->
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="companyinfo">
+							<h2><img src="../images/home/new_logo.png" alt="" width="120" height="40"/></h2>
+							<p>Sale off</p>
+						</div>
+					</div>
+					<div class="col-sm-7">
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="../images/home/anh1.jpg" alt="" width="80" height="80"/>
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Lego City</p>
+								<h>ID:60204</h>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="../images/home/anh2.jpg" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Lego City</p>
+								<h>ID:60194</h>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="../images/home/anh3.jpg" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Lego City</p>
+								<h>ID:60110</h>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="../images/home/anh4.jpg" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Lego City</p>
+								<h>ID:60200</h>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="address">
+							<img src="images/home/map.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="">Online Help</a></li>
+								<li><a href="">Contact Us</a></li>
+								<li><a href="">Order Status</a></li>
+								<li><a href="">Change Location</a></li>
+								<li><a href="">FAQ’s</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Model Lego</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="">Ninja Go</a></li>
+								<li><a href="">Creator</a></li>
+								<li><a href="">Star War</a></li>
+								<li><a href="">City</a></li>
+								<li><a href="">Friends</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Terms of Use</a></li>
+								<li><a href="#">Privecy Policy</a></li>
+								<li><a href="#">Refund Policy</a></li>
+								<li><a href="#">Billing System</a></li>
+								<li><a href="#">Ticket System</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Company Information</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Store Location</a></li>
+								<li><a href="#">Affillate Program</a></li>
+								<li><a href="#">Copyright</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-sm-offset-1">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Your email address" />
+								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+							</form>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2020 KVD. All rights reserved.</p>
+					<p class="pull-right">Designed by <span><a target="" href="index.html">KVD</a></span></p>
+				</div>
+			</div>
+		</div>
+		
+	</footer><!--/Footer-->
+    <script>
+         var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+         showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide12");
+        var dots = document.getElementsByClassName("change-img");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active1", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active1";
+    }
+    </script>
+
+  
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
